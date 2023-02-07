@@ -26,11 +26,11 @@ function Navbar(props) {
                 {props.home}
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="About">
                 About
               </Link>
-            </li>
+            </li> */}
           </ul>
 
           <div className="d-flex mx-3">
@@ -59,15 +59,15 @@ function Navbar(props) {
             className="form-check form-switch mx-3"
             style={{ color: props.GreenButtonColor }}
           >
-            <input
+            {/* <input
               className="form-check-input"
               type="checkbox"
               role="switch"
               id="flexSwitchCheckChecked"
               onClick={props.onClickGreenBtn}
               // checked
-            />
-            <label
+            /> */}
+            {/* <label
               className="form-check-label"
               htmlFor="flexSwitchCheckChecked"
               color="blue"
@@ -87,14 +87,14 @@ function Navbar(props) {
               id="flexSwitchCheckChecked"
               onClick={props.onClick}
               // checked
-            />
-            <label
+            /> */}
+            {/* <label
               className="form-check-label"
               htmlFor="flexSwitchCheckChecked"
               color="blue"
             >
               {props.mode}
-            </label>
+            </label> */}
           </div>
         </div>
       </div>

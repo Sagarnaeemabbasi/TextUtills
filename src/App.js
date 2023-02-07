@@ -44,14 +44,8 @@ function App() {
         backgroundColor: "#0b1546",
       });
       showAlert("success", ": Dark Mode enabled!");
-      // setInterval(() => {
-      //   document.title = "this is mode";
-      // }, 2000);
-      // setInterval(() => {
-      //   document.title = "Dark Mode Enabled";
-      // }, 1500);
+
     } else {
-      // setBgColor("white");
       setnavbarBg("light");
       setBodyColor("black");
       setTextareaBodyColor("white");
@@ -59,8 +53,6 @@ function App() {
       setMyStyle(null);
       setInerBodyStyle(null);
       setMode("Enable Dark Mode");
-
-      // document.title = "Light Mode Enabled";
     }
   };
   const enableGreenMode = () => {
@@ -100,19 +92,19 @@ function App() {
           backGround={navbarBg}
           buttonColor={bodyColor}
           mode={mode}
-          greenMode={greenMode}
+          // greenMode={greenMode}
           onClickGreenBtn={enableGreenMode}
           clickDifferentbgHandler={clickDifferentbgHandler}
         />
         <Alert alert={alert} />
         <div className="container my-3">
           <Routes>
-            <Route
+            {/* <Route
               path="/about"
               element={
                 <About myStyle={myStyle} innerBodyStyle={innerBodyStyle} />
               }
-            />
+            /> */}
             <Route
               path="/"
               element={
